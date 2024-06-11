@@ -141,7 +141,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 }
 ```
 
-In EF7 or later, If the target table has a trigger, then you can let EF Core know this, and EF will revert to the previous, less efficient technique. This can be done by configuring the corresponding entity type as follows:
+In EF7, if the target table has a trigger, you can let EF Core know about this and EF will revert to the previous, less efficient technique. This can be done by configuring the corresponding entity type as follows:
 
 [!code-csharp[Main](../../../../samples/core/SqlServer/Misc/TriggersContext.cs?name=TriggerConfiguration&highlight=4)]
 
